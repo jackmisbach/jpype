@@ -7,7 +7,7 @@ ls -d /opt/python/cp*/bin
 
 for pybin in /opt/python/cp*/bin; do
     # Exclude 3.6, 3.7, 3.8 and any alpha/beta/rc release
-    if [[ "$dir" =~ ^cp3(6|7|8)-cp3(6|7|8)t?$ ]]; then
+    if [[ "$dir" =~ ^cp3(6|7|8|9)-cp3(6|7|8|9)t?$ ]]; then
         continue
     fi
     pys+=("$pybin")
